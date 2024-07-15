@@ -38,9 +38,9 @@ class StripeServiceProvider extends ServiceProvider
 
         $filesystem = $this->app->make(Filesystem::class);
 
-        return Collection::make([$this->app->database_path().'/migrations/'])
+        return Collection::make([$this->app->databasePath().'/migrations/'])
                 ->flatMap(fn ($path) => $filesystem->glob($path.'*_'.$migrationName))   
-                ->push($this->app->database_path()."/migrations/{$timestamp}_{$migrationName}")
+                ->push($this->app->databasePath()."/migrations/{$timestamp}_{$migrationName}")
                 ->first();
     }
 
