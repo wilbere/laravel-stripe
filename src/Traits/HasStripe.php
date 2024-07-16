@@ -5,7 +5,7 @@ namespace Wilbere\Stripe\Traits;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Wilbere\Stripe\Models\ApiStripe;
 
-class HasStripe
+trait HasStripe
 {
     /**
      * A Model may have one api stripe
