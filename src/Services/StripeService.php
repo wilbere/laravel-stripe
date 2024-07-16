@@ -2,6 +2,7 @@
 
 namespace Wilbere\Stripe\Services;
 
+use Exception;
 use Stripe\StripeClient;
 
 class StripeServices
