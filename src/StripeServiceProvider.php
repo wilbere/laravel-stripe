@@ -27,6 +27,7 @@ class StripeServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/../database/migrations/create_api_stripe_table.php.stub' => $this->getMigrationName('create_api_stripe_table.php'),
+            __DIR__.'/../database/migrations/create_payment_methods_table.php.stub' => $this->getMigrationName('create_payment_methods_table.php'),
         ], 'stripe-migration');
 
     }
