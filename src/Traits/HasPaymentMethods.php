@@ -21,6 +21,6 @@ trait HasPaymentMethods
      */
     public function paymentMethods(): MorphMany
     {
-        return $this->morphMany(PaymentMethod::class, 'stripeable');
+        return $this->morphMany(PaymentMethod::class, 'assignable');
     }
 }

@@ -2,7 +2,7 @@
     "name": "wilbere/laravel-stripe",
     "description": "Integración de método de pago Stripe con el framework Laravel",
     "type": "library",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "keywords": [
         "laravel",
         "stripe",
